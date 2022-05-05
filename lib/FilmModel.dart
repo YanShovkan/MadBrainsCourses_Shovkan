@@ -1,15 +1,16 @@
-import 'package:lesson_one/abstract_film.dart';
-import 'package:lesson_one/converter.dart';
+import 'package:lesson_one/AbstractFilmModel.dart';
+import 'package:lesson_one/Language.dart';
+import 'package:lesson_one/Converter.dart';
 
-class Film extends AbstractFilm with Convertor {
-  Film({
-    required String id,
+class FilmModel extends AbstractFilmModel with Convertor {
+  FilmModel({
+    required int id,
     required String title,
     required String picture,
     required double voteAverage,
     required String releaseDate,
     required String description,
-    required String language
+    required Language language
   }) : super(
       id: id,
       title: title,

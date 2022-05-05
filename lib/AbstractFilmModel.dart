@@ -1,13 +1,15 @@
-abstract class AbstractFilm {
-  String id;
+import 'package:lesson_one/Language.dart';
+
+abstract class AbstractFilmModel {
+  int id;
   String title;
   String picture;
   double voteAverage;
   String releaseDate;
   String description;
-  String language;
+  Language language;
 
-  AbstractFilm({
+  AbstractFilmModel({
     required this.id,
     required this.title,
     required this.picture,
